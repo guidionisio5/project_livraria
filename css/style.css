@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#container {
+    width: 80%;
+    height: 580px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.item{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+label{
+    color: white;
+    font-size: 30px;
+}
+
+.design{
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+}
+
+button{
+    padding: 20px 40px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+}
