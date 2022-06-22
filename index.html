@@ -14,34 +14,33 @@
 
         <h1>Gerenciamneto de livros</h1>
 
-        <form class="formulario" action="">
+        <form action="">
+            <div class="formulario">
+                <div class="item">
+                    <label for="titulo">Título:</label>
+                    <input class="design" type="text" id="titulo" name="titulo" placeholder="Digite o título do livro:"/>
+                </div>
 
-            <div class="item">
-                <label for="titulo">Título:</label>
-                <input class="design" type="text" placeholder="Digite o título:" name="titulo" id="titulo"/>
+                <div class="item">
+                    <label for="autor">Autor:</label>
+                    <input class="design" type="text" id="autor" name="autor" placeholder="Digite o nome do autor:"/>
+                </div>
+                <div class="item">
+                    <label for="categoria">Categoria:</label>
+                    <select class="design" id="categoria" name="categoria">
+                        <option value="" selected disabled>Selecione a categoria</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Ficção">Ficção</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Terror">Terror</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label for="valor">Valor:</label>
+                    <input class="design" type="text" id="valor" name="valor" placeholder="Digite o valor do livro:"/>
+                </div>
             </div>
-
-            <div class="item">
-                <label for="autor">Autor:</label>
-                <input class="design" type="text" placeholder="Digite o nome do autor:" name="autor" id="autor"/>
-            </div>
-            <div class="item">
-                <label for="categoria">Categoria:</label>
-                <select class="design" name="categoria" id="categoria">
-                    <option value="" selected disabled>Selecione a categoria</option>
-                    <option value="">Drama</option>
-                    <option value="">Ficção</option>
-                    <option value="">Romance</option>
-                    <option value="">Terror</option>
-                </select>
-            </div>
-            <div class="item">
-                <label for="valor">Valor:</label>
-                <input class="design" type="text" placeholder="Digite o valor:" name="valor" id="valor"/>
-            </div>
-
-            <button type="submit">Cadastrar</button>
-
+            <button type="button" onclick="cadastrar()">Cadastrar</button>
         </form>
 
         <script src="js/script.js"></script>
