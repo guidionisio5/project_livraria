@@ -27,7 +27,7 @@ try {
   // seta o modo de erro do PDO para exception
   $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  // querry de inserção de dados no DB MySQL
+  // querry(comando) de inserção de dados no DB MySQL
   $sql = "INSERT into 
           tb_livros
             (titulo,autor,id_categorias,valor)
@@ -57,3 +57,4 @@ $json = json_encode($resposta, JSON_UNESCAPED_UNICODE);
 echo $json;
 
 // final da conexão
+?>
